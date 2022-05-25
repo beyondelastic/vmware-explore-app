@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vmworld-demo-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: demo-app-ui
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        app: demo-app-ui
+        tier: frontend
+    spec:
+      containers:
+        - name: demo-app-ui
+          image: harbor.vlab2.uhtec.de/build/vmworld:1.0
+          ports:
+          - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vmworld-demo-app
+  labels:
+    app: demo-app-ui
+    tier: frontend
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+  selector:
+    app: demo-app-ui
+    tier: frontend
+
+
