@@ -9,7 +9,7 @@ The talk consists of two parts:
 
 ## The App
 
-This is a very simple static HTML side showing the VMworld content and some additional links with more information around the topics. The site is based on [HTML5 UP](https://html5up.net/). If you would like to learn more about containers follow these links:
+This is a very simple static HTML side showing the VMware Explore content and some additional links with more information around the topics. The site is based on [HTML5 UP](https://html5up.net/). If you would like to learn more about containers follow these links:
 
 * [Containers 101](https://kube.academy/courses/containers-101)
 * [Building Applications for Kubernetes](https://kube.academy/courses/building-applications-for-kubernetes)
@@ -20,7 +20,7 @@ This is a very simple static HTML side showing the VMworld content and some addi
 We use the docker daemon to build the container and run it afterwards.
 
 ```bash
-docker build . -t your-docker-hub-account/vmworld:1.0
+docker build . -t your-docker-hub-account/vmware-explore:1.0
 ```
 
 ### Use the App
@@ -28,13 +28,7 @@ docker build . -t your-docker-hub-account/vmworld:1.0
 We run the container localy and exposite to the local port ```5000```:
 
 ```bash
-docker run -d -p 5000:80 --rm --name vmworld your-docker-hub-account/vmworld:1.0
-```
-
-If you just want to test it without building it. We got you covered as well: 
-
-```bash
-docker run -d -p 5000:80 --rm --name vmworld ghcr.io/devulrix/vmworld:1.0
+docker run -d -p 5000:80 --rm --name vmware-explore your-docker-hub-account/vmware-explore:1.0
 ```
 
 ## Deployment
