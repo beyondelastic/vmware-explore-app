@@ -41,8 +41,8 @@ We're using a simple deployment file to start the application in our Kubernetes 
 We have two files to match the steps in the Demo. First we create the deployment and afterwards we create the Load Balancer. If you want to use your own image, please update the deployment file to reference your image. The default setting is to pull the image from github.
 
 ```bash
-kubectl apply -f deployment/01-vmworld-deployment.yaml
-kubectl apply -f deployment/02-vmworld-lb.yaml
+kubectl apply -f deployment/01-vmware-explore-deployment.yaml
+kubectl apply -f deployment/02-vmware-explore-service.yaml
 ```
 
 ## Credit
