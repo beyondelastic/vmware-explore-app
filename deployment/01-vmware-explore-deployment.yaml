@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vmware-explore-demo-app
+  name: vmware-explore-app
 spec:
   replicas: 2
   selector:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: demo-app-ui
-          image: harbor.vlab2.uhtec.de/build/vmworld:1.0
+          image: harbor.tools.beyondelastic.demo/vmware-explore/vmware-explore-app:v1
           ports:
           - containerPort: 80
 

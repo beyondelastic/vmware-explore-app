@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: vmware-explore-demo-app
+  name: vmware-explore-app
   labels:
     app: demo-app-ui
     tier: frontend
