@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: demo-app-ui
-          image: harbor.tools.beyondelastic.demo/vmware-explore/vmware-explore-app:v1
+          image: ghcr.io/beyondelastic/vmware-explore-app:v7
           ports:
           - containerPort: 80
 
