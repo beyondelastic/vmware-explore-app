@@ -1,6 +1,6 @@
 # VMware Explore Demo App
 
-This is the repository used for the Demo App in the VMware Explore 2022 talk: Get Started with Containers and Kubernetes using vSphere with Tanzu
+This is the repository used for the Demo App in the VMware Explore 2023 talk: Get Started with Containers,Kubernetes and Tanzu
 
 The talk consists of two parts:
 
