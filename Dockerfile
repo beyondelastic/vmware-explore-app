@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-LABEL maintainer="aullah"
+LABEL maintainer="aullah,rguske"
 
 EXPOSE 80
 

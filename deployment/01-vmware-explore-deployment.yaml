@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: demo-app-ui
-          image: ghcr.io/beyondelastic/vmware-explore-app:v10
+          image: http://projects.registry.vmware.com/tanzu_ese_poc/vmware-explore-app:v1
           ports:
           - containerPort: 80
 
